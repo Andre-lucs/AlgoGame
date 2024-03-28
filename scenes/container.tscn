@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bup7r3n8g3ph4"]
+
+[ext_resource type="Texture2D" uid="uid://h2iywp5v3j8t" path="res://icon.svg" id="1_7f04s"]
+[ext_resource type="Script" path="res://types/Container.cs" id="1_qfjqb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubj6o"]
+
+[node name="Container" type="CharacterBody2D"]
+modulate = Color(1, 1, 0, 1)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_qfjqb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_7f04s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ubj6o")

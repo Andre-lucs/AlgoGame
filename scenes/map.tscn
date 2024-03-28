@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgj57neh0hq15"]
+
+[ext_resource type="PackedScene" uid="uid://dpj0kedeyv6hb" path="res://scenes/player.tscn" id="1_3usit"]
+[ext_resource type="PackedScene" uid="uid://bup7r3n8g3ph4" path="res://scenes/container.tscn" id="2_qg2xq"]
+[ext_resource type="PackedScene" uid="uid://bs5oa0tg2dsll" path="res://scenes/game_number.tscn" id="4_chada"]
+
+[node name="Map" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_3usit")]
+position = Vector2(122, 78)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="Container" parent="." instance=ExtResource("2_qg2xq")]
+position = Vector2(46, 99)
+
+[node name="GameNumber" parent="." instance=ExtResource("4_chada")]
+position = Vector2(71, 54)
+Number = 3.0
+
+[node name="Container2" parent="." instance=ExtResource("2_qg2xq")]
+position = Vector2(189, 120)
+
+[node name="Container3" parent="." instance=ExtResource("2_qg2xq")]
+position = Vector2(184, 49)
+
+[node name="Container4" parent="." instance=ExtResource("2_qg2xq")]
+position = Vector2(103, 32)
+
+[node name="Container5" parent="." instance=ExtResource("2_qg2xq")]
+position = Vector2(120, 125)
